@@ -3,7 +3,7 @@
 // Create Date : 2015/11/05
 //
 // 功能：　jslogger 日志模块，提供Info,Warn,Error等级别
-package lib
+package JLogger
 
 import (
 	"errors"
@@ -16,6 +16,7 @@ import (
 	"sync"
 	"time"
 
+	"JGo/JConfig"
 )
 
 // 日志常用参数

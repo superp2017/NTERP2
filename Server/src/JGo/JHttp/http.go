@@ -1,8 +1,6 @@
-package lib
+package JHttp
 
 import (
-	"JGo/JCache"
-	"JGo/JConfig"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -12,6 +10,10 @@ import (
 	"time"
 
 	"sync"
+
+	"JGo/JCache"
+	"JGo/JConfig"
+	. "JGo/JLogger"
 )
 
 const (

@@ -1,4 +1,4 @@
-package lib
+package JCache
 
 import (
 	"encoding/gob"

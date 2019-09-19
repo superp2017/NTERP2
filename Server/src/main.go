@@ -12,6 +12,7 @@ import (
 	"os"
 	"runtime"
 	"syscall"
+	"JGo/JHttp"
 )
 
 func daemon() {
@@ -47,4 +48,5 @@ func init()  {
 
 func main()  {
 	daemon()
+	JHttp.Run()
 }

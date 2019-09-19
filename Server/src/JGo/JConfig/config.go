@@ -1,4 +1,4 @@
-package lib
+package JConfig
 
 import (
 	"encoding/json"
