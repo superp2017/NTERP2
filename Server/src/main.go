@@ -18,7 +18,8 @@ func init()  {
 
 func main()  {
 	Daemon.StartDaemon()
-	startTimerTask()
+	startDB()
 	startTcp()
 	startHttp()
+	//startTimerTask()
 }
