@@ -30,7 +30,7 @@ func NewDepartment(session *Http.Session) {
 		return
 	}
 
-	stmt, err := m_db.Prepare("insert  department(depart) value(?)")
+	stmt, err := m_db.Prepare("insert  departments(depart) value(?)")
 	if err != nil {
 		errStr := "NewDepartment Prepare failed" + err.Error()
 		Logger.Error(errStr)
@@ -65,7 +65,7 @@ func RemoveDepartment(session *Http.Session) {
 		return
 	}
 
-	stmt, err := m_db.Prepare("DELETE  FROM department WHERE depart=?")
+	stmt, err := m_db.Prepare("DELETE  FROM departments WHERE depart=?")
 	if err != nil {
 		errStr := "RemoveDepartment Prepare:" + err.Error()
 		Logger.Error(errStr)
@@ -85,7 +85,7 @@ func RemoveDepartment(session *Http.Session) {
 
 //获取所有的部门
 func GetAllDepartment(session *Http.Session) {
-	rows, err := m_db.Query("SELECT * FROM department ")
+	rows, err := m_db.Query("SELECT * FROM departments ")
 	if err != nil {
 		errStr := "GetAllDepartment Query:" + err.Error()
 		Logger.Error(errStr)
@@ -125,7 +125,7 @@ func NewUnit(session *Http.Session) {
 		return
 	}
 
-	stmt, err := m_db.Prepare("insert  unit(unit) value(?)")
+	stmt, err := m_db.Prepare("insert  units(unit) value(?)")
 	if err != nil {
 		errStr := "NewUnit Prepare failed" + err.Error()
 		Logger.Error(errStr)
@@ -160,7 +160,7 @@ func RemoveUnit(session *Http.Session) {
 		return
 	}
 
-	stmt, err := m_db.Prepare("DELETE  FROM unit WHERE unit=?")
+	stmt, err := m_db.Prepare("DELETE  FROM units WHERE unit=?")
 	if err != nil {
 		errStr := "RemoveUnit Prepare:" + err.Error()
 		Logger.Error(errStr)
@@ -180,7 +180,7 @@ func RemoveUnit(session *Http.Session) {
 
 //获取所有的单位
 func GetAllUnit(session *Http.Session) {
-	rows, err := m_db.Query("SELECT * FROM unit ")
+	rows, err := m_db.Query("SELECT * FROM units ")
 	if err != nil {
 		errStr := "GetAllUnit Query:" + err.Error()
 		Logger.Error(errStr)
@@ -221,7 +221,7 @@ func NewPlating(session *Http.Session) {
 		return
 	}
 
-	stmt, err := m_db.Prepare("insert  unit(unit) value(?)")
+	stmt, err := m_db.Prepare("insert  platings(plating) value(?)")
 	if err != nil {
 		errStr := "NewPlating Prepare failed" + err.Error()
 		Logger.Error(errStr)
@@ -256,7 +256,7 @@ func RemovePlating(session *Http.Session) {
 		return
 	}
 
-	stmt, err := m_db.Prepare("DELETE  FROM plating WHERE plating=?")
+	stmt, err := m_db.Prepare("DELETE  FROM platings WHERE plating=?")
 	if err != nil {
 		errStr := "RemovePlating Prepare:" + err.Error()
 		Logger.Error(errStr)
@@ -276,7 +276,7 @@ func RemovePlating(session *Http.Session) {
 
 //获取所有的镀种
 func GetAllPlating(session *Http.Session) {
-	rows, err := m_db.Query("SELECT * FROM plating ")
+	rows, err := m_db.Query("SELECT * FROM platings ")
 	if err != nil {
 		errStr := "GetAllPlating Query:" + err.Error()
 		Logger.Error(errStr)

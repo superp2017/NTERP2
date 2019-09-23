@@ -171,7 +171,7 @@ func GetAllCustomer(session *Http.Session) {
 			Logger.Error(err.Error())
 			continue
 		}
-		u.CName = "C" + u.CID
+
 		list = append(list, u)
 	}
 	session.Forward("0", "GetAllCustomer success", list)

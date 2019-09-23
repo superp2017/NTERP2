@@ -173,7 +173,7 @@ func GetAllUser(session *Http.Session) {
 			Logger.Error(err.Error())
 			continue
 		}
-		u.UName = "U" + u.UID
+
 		list = append(list, u)
 	}
 	session.Forward("0", "success", list)

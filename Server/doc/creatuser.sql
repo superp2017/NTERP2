@@ -9,7 +9,6 @@
 		 loginname  CHAR(16) NOT NULL unique key,
          logincode    CHAR(16) NOT NULL,
          author TINYINT NOT NULL,
-		 curstatus CHAR(2) NOT NULL,
          intime CHAR(32),
          outtime CHAR(32),
          creattime CHAR(32) NOT NULL,

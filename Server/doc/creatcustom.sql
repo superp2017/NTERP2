@@ -1,7 +1,6 @@
 user     CREATE TABLE customer (
          cid int unsigned NOT NULL AUTO_INCREMENT primary key,
          cname CHAR(32)  NOT NULL unique key,
-         icon CHAR(16),
          addr CHAR(64),
          tel  CHAR(11),
          contactname CHAR(16),
@@ -10,9 +9,7 @@ user     CREATE TABLE customer (
          banknumber CHAR(32),
          bankbranch CHAR(16),
          certificatesnum CHAR(64),
-         certificates CHAR(64),
          note CHAR(64),
-         curstatus CHAR(2),
          creattime  CHAR(32),
 		 creatstamp BIGINT NOT NULL,
 		 lastTime BIGINT NOT NULL
