@@ -37,7 +37,6 @@ func CurStamp() int64 {
 	return time.Now().Unix()
 }
 
-
 func Decimal(value float64) float64 {
 	value, _ = strconv.ParseFloat(fmt.Sprintf("%.2f", value), 64)
 	return value
